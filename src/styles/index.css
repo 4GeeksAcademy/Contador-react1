@@ -44,3 +44,21 @@ width: 100px;
   transform: translateY(6px);
   box-shadow: 0 0 0 rgb(188, 190, 190);
 }
+#butonParar{
+  height: 30px;
+width: 100px;
+    padding: 2px;
+    margin: 10px;
+    background-color: rgb(236, 41, 41);
+    border-radius: 8px;
+    border: 0;
+    color: aliceblue;
+  
+   transition: all 0.15s ease;
+  box-shadow: 0 6px 0 rgb(181, 96, 96);
+}
+
+#butonParar:active {
+  transform: translateY(6px);
+  box-shadow: 0 0 0 rgb(126, 65, 65);
+}

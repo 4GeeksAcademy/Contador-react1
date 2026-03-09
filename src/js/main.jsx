@@ -29,7 +29,7 @@ const reiniciar = () => {
 
 }
 
-setInterval(function () {
+let contador = setInterval(function () {
   num1;
   num1 < 9 ? num1++ : num1 = 0;
   num1 === 0 && (num2 < 9 ? num2++ : num2 = 0)
@@ -37,6 +37,7 @@ setInterval(function () {
   num1 === 0 && num2 === 0 && num3 === 0 && (num4 < 9 ? num4++ : num4 = 0)
   num1 === 0 && num2 === 0 && num3 === 0 && num4 === 0 && (num5 < 9 ? num5++ : num5 = 0)
   num1 === 0 && num2 === 0 && num3 === 0 && num4 === 0 && num5 === 0 && (num6 < 9 ? num6++ : num6 = 0)
+
 
 
   ReactDOM.createRoot(document.getElementById('root')).render(
@@ -47,8 +48,13 @@ setInterval(function () {
         digito4={num4}
         digito5={num5}
         digito6={num6} />
-      <ButtonActivo onClick={reiniciar} />
+      <ButtonActivo onReiniciar={reiniciar}
+      onParar={parar} />
     </React.StrictMode>,
   )
 }, 1000);
+
+const parar = () => {
+  clearInterval(contador);
+};
 
