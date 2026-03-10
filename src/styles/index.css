@@ -6,6 +6,7 @@
     border: 8px solid black;
     font-size: 60px;
     border-radius: 15px;
+    color: white;
 }
 
 .icon{display: flex;
@@ -18,6 +19,7 @@
        background-color:#202020;
          font-size: 60px;
     border-radius: 15px;
+    color: white;
 }
 
 #containerButton{

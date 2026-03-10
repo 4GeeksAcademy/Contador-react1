@@ -11,6 +11,7 @@ import '../styles/index.css'
 // components
 import Home from './components/Home';
 import ButtonActivo from './components/button';
+import SecondCounter from './components/SecondsCounter ';
 
 let num1 = 0;
 let num2 = 0;
@@ -18,21 +19,24 @@ let num3 = 0;
 let num4 = 0;
 let num5 = 0;
 let num6 = 0;
-let contador;
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 const renderizar=()=>{root.render(
-    <React.StrictMode>
-      <Home digito1={num1}
-        digito2={num2}
-        digito3={num3}
-        digito4={num4}
-        digito5={num5}
-        digito6={num6} />
-      <ButtonActivo onReiniciar={reiniciar}
-      onParar={parar} />
-    </React.StrictMode>,)}
-
-
+  <React.StrictMode>
+    <Home />
+    <SecondCounter    
+    digito1={num1}
+    digito2={num2}
+    digito3={num3}
+    digito4={num4}
+    digito5={num5}
+    digito6={num6}/>
+    <ButtonActivo onReiniciar={reiniciar}
+    onParar={parar} />
+  </React.StrictMode>,)}
+  
+let contador;
 
 const iniciar=()=>{
 
@@ -67,4 +71,4 @@ renderizar();
 
 }
 renderizar();
-iniciar();
+iniciar()

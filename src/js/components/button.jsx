@@ -13,4 +13,4 @@ function ButtonActivo({onReiniciar, onParar }){
 
 
 
-export default ButtonActivo
+export default ButtonActivo;
